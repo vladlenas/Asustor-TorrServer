@@ -24,8 +24,8 @@ make_apk() {
 
   echo ">>> Making ...................."
   mkdir -p ${tmp_dir}
+  mkdir -p ${tmp_dir}/bin
   cp -r src/CONTROL ${tmp_dir}
-  cp -r src/bin ${tmp_dir}
   cp -a ${torrserver_bin} ${tmp_dir}/bin/torrserver
   chmod +x ${tmp_dir}/bin/torrserver
 
