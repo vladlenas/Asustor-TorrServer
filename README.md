@@ -1,4 +1,3 @@
-# ASUSTOR-TorrServer
 # TorrServer packages for Asustor NAS
 Asustor NAS packages based on precompiled TorrServer binaries https://github.com/YouROK/TorrServer/releases
 
