@@ -1,4 +1,4 @@
-TORRSERVER_VERSION="MatriX.98"
+TORRSERVER_VERSION="MatriX.99"
 PKG_VERSION="1.2.98"
 
 .PHONY: torrserver-% clean
