@@ -8,7 +8,7 @@ amd64)
   PLATFORMS="x86-64"
   ;;
 386)
-  PLATFORMS="any"
+  PLATFORMS="i386"
   ;;
 arm64)
   PLATFORMS="arm64"
