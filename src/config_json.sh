@@ -32,7 +32,7 @@ cat <<EOF
         "conflicts":[],
         "developer":"YouROK",
         "maintainer":"YouROK",
-        "email":"torrserverg@torrserver.tor",
+        "email":"torrserver@torrserver.tor",
         "website":"https://github.com/vladlenas/Asustor-TorrServer/releases",
         "architecture":"${PLATFORMS}",
         "firmware":"3.5.0"
