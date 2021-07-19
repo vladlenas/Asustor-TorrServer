@@ -12,6 +12,11 @@ download_torrserver() {
   local src_bin="${base_url}/${bin_name}"
   local dest_bin="torrserver"
   mkdir -p torrserver
+  
+  if [[ -f ${dest_bin}/TorrServer-linux-${ARCH} ]]; then
+    echo ">>> Binaries already exist: ${pkg_name}"
+    return
+  fi
 
   echo ">> Downloading ................."
   wget --no-verbose -P ${dest_bin} ${src_bin}
