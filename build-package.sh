@@ -10,22 +10,22 @@ download_torrserver() {
   local base_url="https://github.com/YouROK/TorrServer/releases/download/${TORRSERVER_VERSION}"
   local bin_name="TorrServer-linux-${ARCH}"
   local src_bin="${base_url}/${bin_name}"
-  local dest_bin="torrserver"
-  mkdir -p torrserver
+  local dest_bin="dest_bin"
   
   if [[ -f ${dest_bin}/TorrServer-linux-${ARCH} ]]; then
-    echo ">>> Binaries already exist: ${pkg_name}"
+    echo ">>> Binaries already exist: ${bin_name}"
     return
   fi
 
   echo ">> Downloading ................."
+  mkdir -p dest_bin
   wget --no-verbose -P ${dest_bin} ${src_bin}
 }
 
 make_apk() {
   local tmp_dir="build"
   local apk_dir="apk"
-  local torrserver_bin="torrserver/TorrServer-linux-${ARCH}"
+  local torrserver_bin="dest_bin/TorrServer-linux-${ARCH}"
 
   echo ">>> Making ...................."
   mkdir -p ${tmp_dir}
