@@ -11,6 +11,8 @@ Asustor NAS packages based on precompiled TorrServer binaries https://github.com
 ```
 git clone https://github.com/vladlenas/Asustor-TorrServer.git
 cd Asustor-TorrServer/
+```
+```
 make
 ```
 TorrServer version change
