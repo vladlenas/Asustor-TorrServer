@@ -31,11 +31,11 @@ cat <<EOF
         "depends":[],
         "conflicts":[],
         "developer":"YouROK",
-        "maintainer":"YouROK",
-        "email":"torrserver@torrserver.tor",
-        "website":"https://github.com/vladlenas/Asustor-TorrServer/releases",
+        "maintainer":"Vladlenas",
+        "email":"voxel.firmware@gmail.com",
+        "website":"https://github.com/vladlenas/Asustor-TorrServer",
         "architecture":"${PLATFORMS}",
-        "firmware":"3.5.0"
+        "firmware":"3.0.0"
      },
      "adm-desktop": {
         "app": {
@@ -45,7 +45,7 @@ cat <<EOF
             "url": "/"
         },
         "privilege": {
-            "accessible": "users",
+            "accessible": "administrators",
             "customizable": true
         }
     },
@@ -59,8 +59,8 @@ cat <<EOF
             "8090"
         ],
         "boot-priority": {
-            "start-order": 55,
-            "stop-order": 55
+            "start-order": 90,
+            "stop-order": 5
         }
     }   
 }
