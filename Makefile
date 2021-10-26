@@ -3,7 +3,7 @@ PKG_VERSION="1.2.109"
 
 .PHONY: torrserver-% clean
 
-all: torrserver-amd64 torrserver-386 torrserver-arm64 torrserver-arm7
+all: torrserver-amd64 torrserver-arm64 #torrserver-386 torrserver-arm7
 
 torrserver-%:
 	@./build-package.sh ${TORRSERVER_VERSION} $* ${PKG_VERSION}
