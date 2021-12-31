@@ -2,10 +2,8 @@
 Asustor NAS packages based on precompiled TorrServer binaries https://github.com/YouROK/TorrServer/releases
 
 # Sopported Architecture
-* arm7
 * arm64
 * amd64
-* 386
 
 # Making packages
 ```
