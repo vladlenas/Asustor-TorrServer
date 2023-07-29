@@ -37,7 +37,7 @@ make_apk() {
   ./src/config_json.sh ${PKG_VERSION} ${ARCH} >"${tmp_dir}"/CONTROL/config.json
 
   mkdir -p ${apk_dir}
-  ./apkg-tools.py create ${tmp_dir}/
+  ./apkg-tools_py3.py create ${tmp_dir}/
   mv torrserver_* ${apk_dir}
   rm -rf ${tmp_dir}
   echo ">>>> Done"
