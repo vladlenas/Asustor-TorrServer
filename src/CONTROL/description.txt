@@ -1,1 +1,17 @@
 TorrServer, stream torrent to http.
+
+-- Web authorization!
+To enable authorization, in the console using ssh, execute the command:
+  "echo -e "{ \n\"admin\":\"admin\" \n}" >> /usr/local/AppCentral/torrserver/config/accs.db"
+where "admin admin" is the default login and password, you can change it to your own.
+Then turn off and on the torrserver!
+
+To disable authorization, execute the command:
+  "rm -rf /usr/local/AppCentral/torrserver/config/accs.db"
+Then turn off and on the torrserver!
+
+-- Log file
+The log file is on the path:
+  "/usr/local/AppCentral/torrserver/torrserver.log"
+Copy the log, as an example:
+  "cp -rf /usr/local/AppCentral/torrserver/torrserver.log /volume1/you_share_folder"
