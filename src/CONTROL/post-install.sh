@@ -1,22 +1,16 @@
 #!/bin/sh
 
-if [[ -z $APKG_PKG_DIR ]]; then
-	PKG_DIR=/usr/local/AppCentral/torrserver
-else
-	PKG_DIR="${APKG_PKG_DIR}"
-fi
+PKG_PATH=$APKG_PKG_DIR/bin
 
-CONFIG_DIR=$PKG_DIR/config
+case "${APKG_PKG_STATUS}" in
 
-case ${APKG_PKG_STATUS} in
-
-    install)
-	;;
-    upgrade)   
-	cp -fa $APKG_TEMP_DIR/* $CONFIG_DIR/
-	;;
-    *)
-	;;
+	install)
+		;;
+	upgrade)
+		  cp -fa $APKG_TEMP_DIR/config.db $PKG_PATH/.
+		;;
+	*)
+		;;
 esac
 
 exit 0
