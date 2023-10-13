@@ -1,8 +1,7 @@
 TorrServer, stream torrent to http.
 
--- Web authorization!
 -- Log file
-The log file is on the path:
-  "/usr/local/AppCentral/torrserver/torrserver.log"
+The log file path:
+  "/usr/local/AppCentral/torrserver/bin/torrserver.log"
 Copy the log, as an example:
-  "cp -rf /usr/local/AppCentral/torrserver/torrserver.log /volume1/you_share_folder"
+  "cp -rf /usr/local/AppCentral/torrserver/bin/torrserver.log /volume1/you_share_folder"
