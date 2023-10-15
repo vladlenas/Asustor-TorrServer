@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PKG_PATH=$APKG_PKG_DIR/bin
-LOG_FILE=$PKG_PATH/torrserver.log
+LOG_FILE=$APKG_PKG_DIR/torrserver.log
 PORT=8090
 
 case $1 in
