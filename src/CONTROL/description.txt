@@ -2,6 +2,4 @@ TorrServer, stream torrent to http.
 
 -- Log file
 The log file path:
-  "/usr/local/AppCentral/torrserver/bin/torrserver.log"
-Copy the log, as an example:
-  "cp -rf /usr/local/AppCentral/torrserver/bin/torrserver.log /volume1/you_share_folder"
+  "/usr/local/AppCentral/torrserver/torrserver.log"
